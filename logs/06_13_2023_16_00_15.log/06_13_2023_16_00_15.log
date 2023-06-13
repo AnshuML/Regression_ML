@@ -1,0 +1,25 @@
+[ 2023-06-13 16:00:17,258 ] 23 root - INFO - data ingestion methods starts
+[ 2023-06-13 16:00:26,341 ] 27 root - INFO - dataset read as pandas DataFrame
+[ 2023-06-13 16:00:27,028 ] 31 root - INFO - train test split
+[ 2023-06-13 16:00:27,813 ] 37 root - INFO - Ingestion of data is completed
+[ 2023-06-13 16:00:27,986 ] 78 root - INFO - Read train and test data completed
+[ 2023-06-13 16:00:27,991 ] 79 root - INFO - Train Dataframe Head : 
+   Unnamed: 0      id  carat        cut color clarity  depth  table     x     y     z  price
+0      135225  135225   0.71      Ideal     E     VS2   62.0   56.0  5.70  5.74  3.54   3170
+1      137241  137241   1.66    Premium     G     SI1   62.7   59.0  7.54  7.49  4.72  12787
+2       58061   58061   0.53    Premium     E     SI1   60.7   56.0  5.24  5.21  3.18   1607
+3       41364   41364   1.07       Good     F     SI2   63.2   63.0  6.51  6.47  4.10   4232
+4      122386  122386   1.20  Very Good     D     SI1   60.8   58.0  6.88  6.90  4.18   7191
+[ 2023-06-13 16:00:27,994 ] 80 root - INFO - Test Dataframe Head  : 
+       id  carat      cut color clarity  depth  table     x     y     z  price
+0  164424   1.02  Premium     D     SI2   59.9   59.0  6.60  6.53  3.93   4715
+1   68432   0.54    Ideal     D     SI1   60.8   55.0  5.28  5.31  3.21   1847
+2   35670   2.03  Premium     F     SI2   61.6   56.0  8.19  8.14  5.02  18678
+3  190516   1.01  Premium     F     VS2   59.8   60.0  6.53  6.49  3.89   6416
+4   44697   1.16    Ideal     I     SI1   62.0   56.0  6.70  6.73  4.17   6132
+[ 2023-06-13 16:00:27,994 ] 82 root - INFO - Obtaining preprocessing object
+[ 2023-06-13 16:00:27,994 ] 27 root - INFO - Data Transformation initiated
+[ 2023-06-13 16:00:27,994 ] 37 root - INFO - Pipeline Initiated
+[ 2023-06-13 16:00:28,216 ] 99 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2023-06-13 16:00:28,224 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2023-06-13 16:00:28,225 ] 120 root - INFO - Exception occured in the initiate_datatransformation
