@@ -1,0 +1,27 @@
+[ 2023-06-13 20:57:20,324 ] 23 root - INFO - data ingestion methods starts
+[ 2023-06-13 20:57:28,112 ] 27 root - INFO - dataset read as pandas DataFrame
+[ 2023-06-13 20:57:28,867 ] 31 root - INFO - train test split
+[ 2023-06-13 20:57:29,658 ] 37 root - INFO - Ingestion of data is completed
+[ 2023-06-13 20:57:29,832 ] 78 root - INFO - Read train and test data completed
+[ 2023-06-13 20:57:29,847 ] 79 root - INFO - Train Dataframe Head : 
+   Unnamed: 0      id  carat      cut color clarity  depth  table     x     y     z  price
+0      186204  186204   0.42    Ideal     F    VVS2   61.4   57.0  4.83  4.77  2.95   1221
+1      162488  162488   0.31    Ideal     E    VVS1   62.0   55.0  4.34  4.36  2.70    826
+2       24862   24862   1.53  Premium     G     VS1   62.0   59.0  7.33  7.34  4.55  15111
+3      171910  171910   1.61  Premium     I     VS2   62.3   57.0  7.56  7.49  4.67  10111
+4      108790  108790   1.03    Ideal     H     SI1   61.6   57.0  6.49  6.52  4.01   5186
+[ 2023-06-13 20:57:29,849 ] 80 root - INFO - Test Dataframe Head  : 
+       id  carat        cut color clarity  depth  table     x     y     z  price
+0    7671   1.55      Ideal     G     SI1   61.2   56.0  7.41  7.52  4.58   9699
+1  141664   0.31  Very Good     H    VVS1   62.5   61.0  4.28  4.33  2.69    661
+2  110821   0.39      Ideal     E    VVS2   60.9   56.0  4.73  4.76  2.89   1052
+3  192108   0.32      Ideal     J    VVS1   62.6   57.0  4.38  4.37  2.74    526
+4  189820   0.32      Ideal     E     VS2   62.1   57.0  4.32  4.36  2.70    702
+[ 2023-06-13 20:57:29,849 ] 82 root - INFO - Obtaining preprocessing object
+[ 2023-06-13 20:57:29,849 ] 27 root - INFO - Data Transformation initiated
+[ 2023-06-13 20:57:29,849 ] 37 root - INFO - Pipeline Initiated
+[ 2023-06-13 20:57:30,061 ] 99 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2023-06-13 20:57:30,076 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2023-06-13 20:57:30,076 ] 26 root - INFO - splitting the dependent and independent variables from train and test
+[ 2023-06-13 20:57:30,678 ] 44 root - INFO - model report :{'LinearRegression': 0.9368148629194445, 'Lasso': 0.9368211836209713, 'Ridge': 0.9368149827310743, 'ElasticNet': 0.8552281304852227}
+[ 2023-06-13 20:57:30,678 ] 66 root - INFO - Exception occured at model training
